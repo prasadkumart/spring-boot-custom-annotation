@@ -56,6 +56,29 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Annotations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/annotations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"annotations"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
