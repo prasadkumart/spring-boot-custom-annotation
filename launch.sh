@@ -1,0 +1,1 @@
+java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8001,suspend=n -jar target/spring-boot-custom-annotations-0.1.0.jar

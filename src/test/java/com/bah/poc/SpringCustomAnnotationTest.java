@@ -11,7 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.bah.poc.model.Employee;
+import com.bah.poc.dto.Employee;
 
 @RunWith(SpringRunner.class)
 public class SpringCustomAnnotationTest {

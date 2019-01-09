@@ -1,31 +1,29 @@
 package com.bah.poc;
 
-import java.util.Set;
-
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.ValidatorFactory;
+import java.util.Map;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.bah.poc.annotations.CustomForeinKey;
 
 @SpringBootApplication
-//@RestController
-public class Application { // implements CommandLineRunner {
-
-	/*
-	 * @RequestMapping("/") public String home() { return "Hello Docker World"; }
-	 */
+public class Application{ // implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
-	/*
-	 * public static void main(String[] args) {
-	 * SpringApplication.run(SpringBootMain.class, args); }
-	 */
+/*	@Override
+	public void run(String... args) throws Exception {
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+		Map<String, Object> beans = ctx.getBeansWithAnnotation( CustomForeinKey.class );
+		System.out.println(beans);
+	}*/
+
 	/*
 	 * @Override public void run(String... args) throws Exception { Employee
 	 * employee = new Employee(); employee.setFirstName("Prasad");

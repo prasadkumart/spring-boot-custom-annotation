@@ -1,4 +1,5 @@
-package com.bah.poc.model;
+
+package com.bah.poc.dto;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -6,15 +7,14 @@ import javax.validation.constraints.Size;
 import com.bah.poc.annotations.CourseCode;
 
 public class Employee {
-	
+
 	private String firstName;
-	
-	@NotNull(message="LastName is must not be null")
-	@Size(min=1, message="LastName is required")
+
+	@NotNull(message = "LastName is must not be null")
+	@Size(min = 1, message = "LastName is required")
 	private String lastName;
-	
-	
-	@CourseCode(value="BAH", message="CouseCode must start with BAH")
+
+	@CourseCode(value = "BAH", message = "CouseCode must start with BAH")
 	private String courseCode;
 
 	public String getFirstName() {
